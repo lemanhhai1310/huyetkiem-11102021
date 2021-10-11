@@ -5,4 +5,8 @@ body{
 #app{
   background: url("images/background.png") no-repeat top center,
               url("images/bottom.png") no-repeat top 1350px center;
+  overflow-x: hidden;
+}
+html{
+
 }

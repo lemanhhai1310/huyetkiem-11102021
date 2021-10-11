@@ -18,8 +18,60 @@
     @include media-breakpoint-up('m'){
       margin-top: -103px;
     }
+    &__imgdownload{
+      filter: grayscale(40%);
+      &:hover{
+        filter: grayscale(0%);
+      }
+    }
     &__img1{
       opacity: 0;
+    }
+    &__nav2{
+      margin: 0;
+      background: url("images/bg_menu_bottom.png") no-repeat 12px 0px;
+      >li{
+        padding: 0;
+        >a{
+          height: 64px;
+          background-size: contain;
+          //width: 276px;
+          filter: grayscale(40%);
+          &:hover{
+            filter: grayscale(0%);
+          }
+        }
+        &.uk-active{
+          >a{
+            filter: grayscale(0%);
+          }
+        }
+        &:nth-child(1){
+          >a{
+            //width: 276px;
+            background: url("images/bg_menu_bottom.png") no-repeat 0px 0px;
+            &:hover{
+              //background: url("images/bg_menu_hover.png") no-repeat 0px 0px;
+            }
+          }
+        }
+        &:nth-child(2){
+          >a{
+            background: url("images/bg_menu_bottom.png") no-repeat -278px 0px;
+            &:hover{
+              //background: url("images/bg_menu_hover.png") no-repeat 0px 0px;
+            }
+          }
+        }
+        &:nth-child(3){
+          >a{
+            background: url("images/bg_menu_bottom.png") no-repeat -554px 0px;
+            &:hover{
+              //background: url("images/bg_menu_hover.png") no-repeat 0px 0px;
+            }
+          }
+        }
+      }
     }
     &__nav1{
       margin: 0;
@@ -27,6 +79,10 @@
         padding: 0;
         >a{
           height: 63px;
+          filter: grayscale(40%);
+          &:hover{
+            filter: grayscale(0%);
+          }
         }
         &:nth-child(1){
           >a{
@@ -72,41 +128,41 @@
         }
         &:nth-child(1){
           >a{
-            background: url("images/bg_menu_newsz.png") no-repeat -6px 0px;
+            background: url("images/bg_menu_news.png") no-repeat -6px 0px;
             &:hover{
-              background: url("images/bg_menu_news.png") no-repeat -5.5px 0px;
+              background: url("images/bg_menu_newsz.png") no-repeat -5.5px 0px;
             }
           }
         }
         &:nth-child(2){
           >a{
-            background: url("images/bg_menu_newsz.png") no-repeat -165px 0px;
+            background: url("images/bg_menu_news.png") no-repeat -165px 0px;
             &:hover{
-              background: url("images/bg_menu_news.png") no-repeat -164.5px 0px;
+              background: url("images/bg_menu_newsz.png") no-repeat -164.5px 0px;
             }
           }
         }
         &:nth-child(3){
           >a{
-            background: url("images/bg_menu_newsz.png") no-repeat -313px 0px;
+            background: url("images/bg_menu_news.png") no-repeat -313px 0px;
             &:hover{
-              background: url("images/bg_menu_news.png") no-repeat -312.5px 0px;
+              background: url("images/bg_menu_newsz.png") no-repeat -312.5px 0px;
             }
           }
         }
         &:nth-child(4){
           >a{
-            background: url("images/bg_menu_newsz.png") no-repeat -480px 0px;
+            background: url("images/bg_menu_news.png") no-repeat -480px 0px;
             &:hover{
-              background: url("images/bg_menu_news.png") no-repeat -479.5px 0px;
+              background: url("images/bg_menu_newsz.png") no-repeat -479.5px 0px;
             }
           }
         }
         &:nth-child(5){
           >a{
-            background: url("images/bg_menu_newsz.png") no-repeat -648px 0px;
+            background: url("images/bg_menu_news.png") no-repeat -648px 0px;
             &:hover{
-              background: url("images/bg_menu_news.png") no-repeat -647.5px 0px;
+              background: url("images/bg_menu_newsz.png") no-repeat -647.5px 0px;
             }
           }
         }
@@ -116,27 +172,27 @@
           }
           &:nth-child(1){
             >a{
-              background: url("images/bg_menu_news.png") no-repeat -5.5px 0px;
+              background: url("images/bg_menu_newsz.png") no-repeat -5.5px 0px;
             }
           }
           &:nth-child(2){
             >a{
-              background: url("images/bg_menu_news.png") no-repeat -164.5px 0px;
+              background: url("images/bg_menu_newsz.png") no-repeat -164.5px 0px;
             }
           }
           &:nth-child(3){
             >a{
-              background: url("images/bg_menu_news.png") no-repeat -312.5px 0px;
+              background: url("images/bg_menu_newsz.png") no-repeat -312.5px 0px;
             }
           }
           &:nth-child(4){
             >a{
-              background: url("images/bg_menu_news.png") no-repeat -479.5px 0px;
+              background: url("images/bg_menu_newsz.png") no-repeat -479.5px 0px;
             }
           }
           &:nth-child(5){
             >a{
-              background: url("images/bg_menu_news.png") no-repeat -647.5px 0px;
+              background: url("images/bg_menu_newsz.png") no-repeat -647.5px 0px;
             }
           }
         }
@@ -145,6 +201,9 @@
     &__itemLink{
       filter: grayscale(85%);
       width: 100%;
+      .uk-active &{
+        filter: grayscale(0%);
+      }
       &:hover{
         filter: grayscale(0%);
       }

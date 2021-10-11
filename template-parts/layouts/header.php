@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <title>Huyet Kiem - <?= /** @var TYPE_NAME  */
         (isset($data['title'])) ? $data['title'] : ''; ?></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">-->
+<!--    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content="width=1200,user-scalable=no" name="viewport">
+<!--    <meta name="viewport" content="width=device-width" />-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
     <!--CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- UIkit CSS -->
@@ -27,7 +32,7 @@
             <nav class="home__navbar uk-navbar-container uk-navbar-transparent" uk-navbar>
                 <div class="uk-navbar-center">
 
-                    <div class="uk-navbar-center-left uk-visible@m" data-src="images/bg_nav_left.png" uk-img>
+                    <div class="uk-navbar-center-left" data-src="images/bg_nav_left.png" uk-img>
                         <div>
                             <ul class="uk-navbar-nav">
                                 <li><a href="#">Trang CHỦ</a></li>
@@ -37,7 +42,7 @@
                         </div>
                     </div>
                     <a class="uk-navbar-item uk-logo" href="#"><img src="images/logo.png" alt=""></a>
-                    <div class="uk-navbar-center-right uk-visible@m" data-src="images/bg_nav_right.png" uk-img>
+                    <div class="uk-navbar-center-right" data-src="images/bg_nav_right.png" uk-img>
                         <div>
                             <ul class="uk-navbar-nav">
                                 <li><a href="#">HƯỚNG DẪN</a></li>

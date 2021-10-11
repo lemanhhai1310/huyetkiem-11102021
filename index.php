@@ -14,7 +14,7 @@
 </div>
 <div class="home__content">
     <div class="uk-container">
-        <div><a href=""><img src="images/button_download.png" alt=""></a></div>
+        <div><a href=""><img class="home__content__imgdownload" src="images/button_download.png" alt=""></a></div>
         <div class="uk-position-relative uk-display-inline-block">
             <img class="home__content__img1" src="images/bg_menu.png" alt="">
             <ul class="uk-subnav home__content__nav1 uk-child-width-expand uk-position-cover">
@@ -26,7 +26,7 @@
         </div>
         <div class="uk-grid-small uk-grid-30-m" uk-grid>
             <div class="uk-width-expand">
-                <ul class="uk-subnav home__content__subnav uk-child-width-expand">
+                <ul class="uk-subnav home__content__subnav uk-child-width-expand" uk-switcher="connect: .my-class">
                     <li class="uk-active"><a href="#"></a></li>
                     <li><a href="#"></a></li>
                     <li><a href="#"></a></li>
@@ -34,63 +34,209 @@
                     <li><a href="#"></a></li>
                 </ul>
                 <div class="home__content__boxNews uk-background-norepeat uk-background-center-center uk-background-cover uk-padding-small" data-src="images/bg_list_news.png" uk-img>
-                    <div class="uk-grid-small uk-grid-20-m" uk-grid>
-                        <div class="uk-width-1-3@m">
-                            <div class="uk-cover-container">
-                                <img src="images/thumbnails_hot_news.png" alt="" uk-cover>
-                                <canvas width="466" height="242"></canvas>
-                            </div>
-                        </div>
-                        <div class="uk-width-expand">
-                            <h3 class="uk-h3 home__content__boxNews__title"><a href="">Bùng Nổ Hoạt Động Kính Hồ Tranh Đoạt tại Kiếm Thế Huyết Kiếm</a></h3>
-                            <p class="home__content__boxNews__desc">Kính Hồ Tranh Đoạt Tiên Thảo là hoạt động diễn ra hàng tuần. Đây chính là dịp để các cá nhân, Bang Hội - Liên
-                                <a href="">(Xem Thêm)</a></p>
-                        </div>
-                        <div class="uk-width-1-1">
-                            <div class="uk-child-width-1-2@m uk-grid-small uk-grid-30-m" uk-grid>
-                                <?php for ($i=0;$i<=5;$i++): ?>
-                                <div>
-                                    <div class="uk-grid-10 uk-flex-middle" uk-grid>
-                                        <div class="uk-width-auto">
-                                            <div class="uk-text-center home__content__boxNews__date">
-                                                <div>08</div>
-                                                <div>10</div>
-                                            </div>
-                                        </div>
-                                        <div class="uk-width-expand">
-                                            <h4 class="uk-h4 uk-margin-remove home__content__boxNews__txt"><a href="">Bùng Nổ Hoạt Động Kính Hồ Tranh Đoạt Tiên Thảo tại TLBB Mỹ Nhân</a></h4>
-                                        </div>
+                    <ul class="uk-switcher my-class">
+                        <li>
+                            <div class="uk-grid-small uk-grid-20-m" uk-grid>
+                                <div class="uk-width-1-3">
+                                    <div class="uk-cover-container">
+                                        <img src="images/thumbnails_hot_news.png" alt="" uk-cover>
+                                        <canvas width="466" height="242"></canvas>
                                     </div>
                                 </div>
-                                <?php endfor; ?>
+                                <div class="uk-width-expand">
+                                    <h3 class="uk-h3 home__content__boxNews__title"><a href="">Bùng Nổ Hoạt Động Kính Hồ Tranh Đoạt tại Kiếm Thế Huyết Kiếm</a></h3>
+                                    <p class="home__content__boxNews__desc">Kính Hồ Tranh Đoạt Tiên Thảo là hoạt động diễn ra hàng tuần. Đây chính là dịp để các cá nhân, Bang Hội - Liên
+                                        <a href="">(Xem Thêm)</a></p>
+                                </div>
+                                <div class="uk-width-1-1">
+                                    <div class="uk-child-width-1-2 uk-grid-small uk-grid-30-m" uk-grid>
+                                        <?php for ($i=0;$i<=5;$i++): ?>
+                                            <div>
+                                                <div class="uk-grid-10 uk-flex-middle" uk-grid>
+                                                    <div class="uk-width-auto">
+                                                        <div class="uk-text-center home__content__boxNews__date">
+                                                            <div>08</div>
+                                                            <div>10</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="uk-width-expand">
+                                                        <h4 class="uk-h4 uk-margin-remove home__content__boxNews__txt"><a href="">Bùng Nổ Hoạt Động Kính Hồ Tranh Đoạt Tiên Thảo tại TLBB Mỹ Nhân</a></h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <?php endfor; ?>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-grid-small uk-grid-20-m" uk-grid>
+                                <div class="uk-width-1-3">
+                                    <div class="uk-cover-container">
+                                        <img src="https://lh3.googleusercontent.com/z_xKK-jKQgCRLnmqaKskK3sSd7uIBEsRJp_Db-0jd0s4P78Ts26IG8ObFsUH_2nKSXOiF3tQf82cN805x-imgbEaF6-nMz6-o30dMV7t060lyqV69AA-edzukSi4XY71OenY8yqY=s0" alt="" uk-cover>
+                                        <canvas width="466" height="242"></canvas>
+                                    </div>
+                                </div>
+                                <div class="uk-width-expand">
+                                    <h3 class="uk-h3 home__content__boxNews__title"><a href="">Bùng Nổ Hoạt Động Kính Hồ Tranh Đoạt tại Kiếm Thế Huyết Kiếm</a></h3>
+                                    <p class="home__content__boxNews__desc">Kính Hồ Tranh Đoạt Tiên Thảo là hoạt động diễn ra hàng tuần. Đây chính là dịp để các cá nhân, Bang Hội - Liên
+                                        <a href="">(Xem Thêm)</a></p>
+                                </div>
+                                <div class="uk-width-1-1">
+                                    <div class="uk-child-width-1-2 uk-grid-small uk-grid-30-m" uk-grid>
+                                        <?php for ($i=0;$i<=5;$i++): ?>
+                                            <div>
+                                                <div class="uk-grid-10 uk-flex-middle" uk-grid>
+                                                    <div class="uk-width-auto">
+                                                        <div class="uk-text-center home__content__boxNews__date">
+                                                            <div>08</div>
+                                                            <div>10</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="uk-width-expand">
+                                                        <h4 class="uk-h4 uk-margin-remove home__content__boxNews__txt"><a href="">Bùng Nổ Hoạt Động Kính Hồ Tranh Đoạt Tiên Thảo tại TLBB Mỹ Nhân</a></h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <?php endfor; ?>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-grid-small uk-grid-20-m" uk-grid>
+                                <div class="uk-width-1-3">
+                                    <div class="uk-cover-container">
+                                        <img src="https://lh6.googleusercontent.com/v3-W9kvsxLz0pudJD8YpXwgEZ8xBHQQ7cnogD7HYMZKAXi4XX8_A1VDjpeRV_e0C_erDvu7-5zgB2cE9aDNlRmmoYeRF69hx7GhSwvHAul1rYPFhsnNOtEDBeOBXjpO1WLgwi0_g=s0" alt="" uk-cover>
+                                        <canvas width="466" height="242"></canvas>
+                                    </div>
+                                </div>
+                                <div class="uk-width-expand">
+                                    <h3 class="uk-h3 home__content__boxNews__title"><a href="">Bùng Nổ Hoạt Động Kính Hồ Tranh Đoạt tại Kiếm Thế Huyết Kiếm</a></h3>
+                                    <p class="home__content__boxNews__desc">Kính Hồ Tranh Đoạt Tiên Thảo là hoạt động diễn ra hàng tuần. Đây chính là dịp để các cá nhân, Bang Hội - Liên
+                                        <a href="">(Xem Thêm)</a></p>
+                                </div>
+                                <div class="uk-width-1-1">
+                                    <div class="uk-child-width-1-2 uk-grid-small uk-grid-30-m" uk-grid>
+                                        <?php for ($i=0;$i<=5;$i++): ?>
+                                            <div>
+                                                <div class="uk-grid-10 uk-flex-middle" uk-grid>
+                                                    <div class="uk-width-auto">
+                                                        <div class="uk-text-center home__content__boxNews__date">
+                                                            <div>08</div>
+                                                            <div>10</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="uk-width-expand">
+                                                        <h4 class="uk-h4 uk-margin-remove home__content__boxNews__txt"><a href="">Bùng Nổ Hoạt Động Kính Hồ Tranh Đoạt Tiên Thảo tại TLBB Mỹ Nhân</a></h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <?php endfor; ?>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-grid-small uk-grid-20-m" uk-grid>
+                                <div class="uk-width-1-3">
+                                    <div class="uk-cover-container">
+                                        <img src="images/thumbnails_hot_news.png" alt="" uk-cover>
+                                        <canvas width="466" height="242"></canvas>
+                                    </div>
+                                </div>
+                                <div class="uk-width-expand">
+                                    <h3 class="uk-h3 home__content__boxNews__title"><a href="">Bùng Nổ Hoạt Động Kính Hồ Tranh Đoạt tại Kiếm Thế Huyết Kiếm</a></h3>
+                                    <p class="home__content__boxNews__desc">Kính Hồ Tranh Đoạt Tiên Thảo là hoạt động diễn ra hàng tuần. Đây chính là dịp để các cá nhân, Bang Hội - Liên
+                                        <a href="">(Xem Thêm)</a></p>
+                                </div>
+                                <div class="uk-width-1-1">
+                                    <div class="uk-child-width-1-2 uk-grid-small uk-grid-30-m" uk-grid>
+                                        <?php for ($i=0;$i<=5;$i++): ?>
+                                            <div>
+                                                <div class="uk-grid-10 uk-flex-middle" uk-grid>
+                                                    <div class="uk-width-auto">
+                                                        <div class="uk-text-center home__content__boxNews__date">
+                                                            <div>08</div>
+                                                            <div>10</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="uk-width-expand">
+                                                        <h4 class="uk-h4 uk-margin-remove home__content__boxNews__txt"><a href="">Bùng Nổ Hoạt Động Kính Hồ Tranh Đoạt Tiên Thảo tại TLBB Mỹ Nhân</a></h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <?php endfor; ?>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-grid-small uk-grid-20-m" uk-grid>
+                                <div class="uk-width-1-3">
+                                    <div class="uk-cover-container">
+                                        <img src="images/thumbnails_hot_news.png" alt="" uk-cover>
+                                        <canvas width="466" height="242"></canvas>
+                                    </div>
+                                </div>
+                                <div class="uk-width-expand">
+                                    <h3 class="uk-h3 home__content__boxNews__title"><a href="">Bùng Nổ Hoạt Động Kính Hồ Tranh Đoạt tại Kiếm Thế Huyết Kiếm</a></h3>
+                                    <p class="home__content__boxNews__desc">Kính Hồ Tranh Đoạt Tiên Thảo là hoạt động diễn ra hàng tuần. Đây chính là dịp để các cá nhân, Bang Hội - Liên
+                                        <a href="">(Xem Thêm)</a></p>
+                                </div>
+                                <div class="uk-width-1-1">
+                                    <div class="uk-child-width-1-2 uk-grid-small uk-grid-30-m" uk-grid>
+                                        <?php for ($i=0;$i<=5;$i++): ?>
+                                            <div>
+                                                <div class="uk-grid-10 uk-flex-middle" uk-grid>
+                                                    <div class="uk-width-auto">
+                                                        <div class="uk-text-center home__content__boxNews__date">
+                                                            <div>08</div>
+                                                            <div>10</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="uk-width-expand">
+                                                        <h4 class="uk-h4 uk-margin-remove home__content__boxNews__txt"><a href="">Bùng Nổ Hoạt Động Kính Hồ Tranh Đoạt Tiên Thảo tại TLBB Mỹ Nhân</a></h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <?php endfor; ?>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="uk-subnav home__content__nav2 uk-child-width-expand" uk-switcher="connect: .my-class2">
+                    <li class="uk-active"><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+                <ul class="uk-switcher my-class2 uk-margin-medium-bottom">
+                    <li>
+                        <div class="uk-grid-5 uk-child-width-1-3" uk-grid>
+                            <div>
+                                <div class="uk-cover-container">
+                                    <img src="images/thum_event1.png" alt="" uk-cover>
+                                    <canvas width="538" height="344"></canvas>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-cover-container">
+                                    <img src="images/thums_event2.png" alt="" uk-cover>
+                                    <canvas width="538" height="344"></canvas>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-cover-container">
+                                    <img src="images/thums_event3.png" alt="" uk-cover>
+                                    <canvas width="538" height="344"></canvas>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div>
-                    <img class="uk-width-1-1" src="images/bg_menu_bottom.png" alt="">
-                </div>
-                <div class="uk-grid-5 uk-child-width-1-3@m uk-margin-medium-bottom" uk-grid>
-                    <div>
-                        <div class="uk-cover-container">
-                            <img src="images/thum_event1.png" alt="" uk-cover>
-                            <canvas width="538" height="344"></canvas>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="uk-cover-container">
-                            <img src="images/thums_event2.png" alt="" uk-cover>
-                            <canvas width="538" height="344"></canvas>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="uk-cover-container">
-                            <img src="images/thums_event3.png" alt="" uk-cover>
-                            <canvas width="538" height="344"></canvas>
-                        </div>
-                    </div>
-                </div>
-                <div class="uk-child-width-1-3 uk-child-width-1-6@m uk-grid-small uk-grid-20-m uk-margin-medium-bottom" uk-grid>
+                    </li>
+                </ul>
+                <div class="uk-child-width-1-6 uk-grid-small uk-grid-20-m uk-margin-medium-bottom" uk-grid uk-switcher="connect: .my-class1">
                     <?php
                     $data = array(
                         'images/caibang.png',
@@ -114,10 +260,23 @@
                     <?php endforeach; ?>
                 </div>
                 <div class="uk-text-center">
-                    <img src="images/monphai_img.png" alt="">
+                    <ul class="my-class1 uk-switcher">
+                        <li><img src="images/monphai_img.png" alt=""></li>
+                        <li><img src="https://kt2009.mobi/img/class_thieulam.png" alt=""></li>
+                        <li><img src="images/monphai_img.png" alt=""></li>
+                        <li><img src="https://kt2009.mobi/img/class_thieulam.png" alt=""></li>
+                        <li><img src="images/monphai_img.png" alt=""></li>
+                        <li><img src="https://kt2009.mobi/img/class_thieulam.png" alt=""></li>
+                        <li><img src="images/monphai_img.png" alt=""></li>
+                        <li><img src="https://kt2009.mobi/img/class_thieulam.png" alt=""></li>
+                        <li><img src="images/monphai_img.png" alt=""></li>
+                        <li><img src="https://kt2009.mobi/img/class_thieulam.png" alt=""></li>
+                        <li><img src="images/monphai_img.png" alt=""></li>
+                        <li><img src="https://kt2009.mobi/img/class_thieulam.png" alt=""></li>
+                    </ul>
                 </div>
             </div>
-            <div class="uk-width-auto@m">
+            <div class="uk-width-auto">
                 <aside class="home__aside">
                     <div>
                         <img class="uk-width-1-1" src="images/baotri.png" alt="">

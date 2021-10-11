@@ -4,7 +4,7 @@
     <div class="uk-section footer__section uk-position-bottom">
         <div class="uk-container">
             <div class="uk-grid-small uk-grid-30-m uk-flex-middle" uk-grid>
-                <div class="uk-width-auto@s">
+                <div class="uk-width-auto">
                     <div class="uk-text-center">
                         <a href=""><img src="images/kingsoft_logo.png" alt=""></a>
                     </div>
