@@ -14,7 +14,16 @@
 </div>
 <div class="home__content">
     <div class="uk-container">
-        <div><a href=""><img class="home__content__imgdownload" src="images/button_download.png" alt=""></a></div>
+        <script>
+            function hover(element) {
+                element.setAttribute('src', 'images/button_download_hover.png');
+            }
+
+            function unhover(element) {
+                element.setAttribute('src', 'images/button_download.png');
+            }
+        </script>
+        <div><a href=""><img class="home__content__imgdownload" src="images/button_download.png" onmouseover="hover(this);" onmouseout="unhover(this);" alt=""></a></div>
         <div class="uk-position-relative uk-display-inline-block">
             <img class="home__content__img1" src="images/bg_menu.png" alt="">
             <ul class="uk-subnav home__content__nav1 uk-child-width-expand uk-position-cover">
@@ -219,18 +228,21 @@
                                 <div class="uk-cover-container">
                                     <img src="images/thum_event1.png" alt="" uk-cover>
                                     <canvas width="538" height="344"></canvas>
+                                    <a href="" class="uk-position-cover"></a>
                                 </div>
                             </div>
                             <div>
                                 <div class="uk-cover-container">
                                     <img src="images/thums_event2.png" alt="" uk-cover>
                                     <canvas width="538" height="344"></canvas>
+                                    <a href="" class="uk-position-cover"></a>
                                 </div>
                             </div>
                             <div>
                                 <div class="uk-cover-container">
                                     <img src="images/thums_event3.png" alt="" uk-cover>
                                     <canvas width="538" height="344"></canvas>
+                                    <a href="" class="uk-position-cover"></a>
                                 </div>
                             </div>
                         </div>
@@ -299,7 +311,7 @@
 
                     </div>
                     <div class="home__aside__hoatdong uk-card-body uk-background-norepeat uk-background-top-center" data-src="images/bg_hoatdong.png" uk-img>
-                        <marquee direction="up" scrolldelay="200" onMouseOver="this.stop()" onMouseOut="this.start()">
+<!--                        <marquee direction="up" scrolldelay="200" onMouseOver="this.stop()" onMouseOut="this.start()">-->
                             <div class="slider">
                                 <div>Lâu Lan Cổ Thành</div>
                                 <div>Công Thành Chiến</div>
@@ -316,7 +328,7 @@
                                 <div>Quân Doanh</div>
 
                             </div>
-                        </marquee>
+<!--                        </marquee>-->
                     </div>
                 </aside>
             </div>
