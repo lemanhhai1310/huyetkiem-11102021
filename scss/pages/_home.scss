@@ -18,6 +18,50 @@
     @include media-breakpoint-up('m'){
       margin-top: -103px;
     }
+    &__img1{
+      opacity: 0;
+    }
+    &__nav1{
+      margin: 0;
+      >li{
+        padding: 0;
+        >a{
+          height: 63px;
+        }
+        &:nth-child(1){
+          >a{
+            background: url("images/bg_menu.png") no-repeat 0px 0px;
+            &:hover{
+              //background: url("images/bg_menu_hover.png") no-repeat 0px 0px;
+            }
+          }
+        }
+        &:nth-child(2){
+          >a{
+            background: url("images/bg_menu.png") no-repeat -159px 0px;
+            &:hover{
+              //background: url("images/bg_menu_hover.png") no-repeat -159px 0px;
+            }
+          }
+        }
+        &:nth-child(3){
+          >a{
+            background: url("images/bg_menu.png") no-repeat -319px 0px;
+            &:hover{
+              //background: url("images/bg_menu_hover.png") no-repeat -319px 0px;
+            }
+          }
+        }
+        &:nth-child(4){
+          >a{
+            background: url("images/bg_menu.png") no-repeat -479px 0px;
+            &:hover{
+              //background: url("images/bg_menu_hover.png") no-repeat -479px 0px;
+            }
+          }
+        }
+      }
+    }
     &__subnav{
       margin: 0;
       >li{

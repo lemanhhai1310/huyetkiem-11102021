@@ -15,7 +15,15 @@
 <div class="home__content">
     <div class="uk-container">
         <div><a href=""><img src="images/button_download.png" alt=""></a></div>
-        <div><img src="images/bg_menu.png" alt=""></div>
+        <div class="uk-position-relative uk-display-inline-block">
+            <img class="home__content__img1" src="images/bg_menu.png" alt="">
+            <ul class="uk-subnav home__content__nav1 uk-child-width-expand uk-position-cover">
+                <li class="uk-active"><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
         <div class="uk-grid-small uk-grid-30-m" uk-grid>
             <div class="uk-width-expand">
                 <ul class="uk-subnav home__content__subnav uk-child-width-expand">
