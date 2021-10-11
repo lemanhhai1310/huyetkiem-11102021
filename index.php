@@ -22,6 +22,15 @@
             function unhover(element) {
                 element.setAttribute('src', 'images/button_download.png');
             }
+
+
+            function hoverLogo(element) {
+                element.setAttribute('src', 'images/logo_hover.png');
+            }
+
+            function unhoverLogo(element) {
+                element.setAttribute('src', 'images/logo.png');
+            }
         </script>
         <div><a href=""><img class="home__content__imgdownload" src="images/button_download.png" onmouseover="hover(this);" onmouseout="unhover(this);" alt=""></a></div>
         <div class="uk-position-relative uk-display-inline-block">

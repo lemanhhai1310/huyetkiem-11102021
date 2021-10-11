@@ -37,7 +37,7 @@
                             </ul>
                         </div>
                     </div>
-                    <a class="uk-navbar-item uk-logo" href="#"><img src="images/logo.png" alt=""></a>
+                    <a class="uk-navbar-item uk-logo" href="#"><img onmouseover="hoverLogo(this);" onmouseout="unhoverLogo(this);" src="images/logo.png" alt=""></a>
                     <div class="uk-navbar-center-right" data-src="images/bg_nav_right.png" uk-img>
                         <div>
                             <ul class="uk-navbar-nav">
