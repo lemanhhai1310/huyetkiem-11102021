@@ -140,19 +140,24 @@
 
                     </div>
                     <div class="home__aside__hoatdong uk-card-body uk-background-norepeat uk-background-top-center" data-src="images/bg_hoatdong.png" uk-img>
-                        Lâu Lan Cổ Thành <br>
-                        Công Thành Chiến <br>
-                        Tống Kim <br>
-                        Thi Đấu Loạn Phái <br>
-                        Tranh Đoạt Lãnh Thổ <br>
-                        Tiêu Dao Cốc <br>
-                        Bạch Hổ Đường <br>
-                        Bao Vạn Đồng <br>
-                        Bí Cảnh <br>
-                        Khiêu Chiến Du Long <br>
-                        Hải Tặc <br>
-                        Thương Hội <br>
-                        Quân Doanh
+                        <marquee direction="up" scrolldelay="200" onMouseOver="this.stop()" onMouseOut="this.start()">
+                            <div class="slider">
+                                <div>Lâu Lan Cổ Thành</div>
+                                <div>Công Thành Chiến</div>
+                                <div>Tống Kim</div>
+                                <div>Thi Đấu Loạn Phái</div>
+                                <div>Tranh Đoạt Lãnh Thổ</div>
+                                <div>Tiêu Dao Cốc</div>
+                                <div>Bạch Hổ Đường</div>
+                                <div>Bao Vạn Đồng</div>
+                                <div>Bí Cảnh</div>
+                                <div>Khiêu Chiến Du Long</div>
+                                <div>Hải Tặc</div>
+                                <div>Thương Hội</div>
+                                <div>Quân Doanh</div>
+
+                            </div>
+                        </marquee>
                     </div>
                 </aside>
             </div>
