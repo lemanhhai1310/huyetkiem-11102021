@@ -92,12 +92,12 @@
                         'images/ngamy.png',
                         'images/minhgiao.png',
 
-                        'images/caibang.png',
-                        'images/caibang.png',
-                        'images/caibang.png',
-                        'images/caibang.png',
-                        'images/caibang.png',
-                        'images/caibang.png',
+                        'images/duongmon.png',
+                        'images/thienvuong.png',
+                        'images/ngudoc.png',
+                        'images/thuyyen.png',
+                        'images/conlon.png',
+                        'images/thiennhan.png',
                     );
                     foreach ($data as $k=>$v): ?>
                     <div>
