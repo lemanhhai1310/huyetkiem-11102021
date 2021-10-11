@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.6/dist/css/uikit.min.css" />
-    <link rel="stylesheet" href="style.css?v=1633944252">
+    <link rel="stylesheet" href="style.css?v=1633945034">
     <!--JS-->
     <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -63,7 +63,7 @@
                             </ul>
                         </div>
                     </div>
-                    <a class="uk-navbar-item uk-logo" href="#"><img src="images/logo.png" alt=""></a>
+                    <a class="uk-navbar-item uk-logo" href="#"><img onmouseover="hoverLogo(this);" onmouseout="unhoverLogo(this);" src="images/logo.png" alt=""></a>
                     <div class="uk-navbar-center-right" data-src="images/bg_nav_right.png" uk-img>
                         <div>
                             <ul class="uk-navbar-nav">
@@ -98,6 +98,15 @@
 
                 function unhover(element) {
                     element.setAttribute('src', 'images/button_download.png');
+                }
+
+
+                function hoverLogo(element) {
+                    element.setAttribute('src', 'images/logo_hover.png');
+                }
+
+                function unhoverLogo(element) {
+                    element.setAttribute('src', 'images/logo.png');
                 }
             </script>
             <div><a href=""><img class="home__content__imgdownload" src="images/button_download.png" onmouseover="hover(this);" onmouseout="unhover(this);" alt=""></a></div>
