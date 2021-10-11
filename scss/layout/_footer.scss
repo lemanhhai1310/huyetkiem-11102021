@@ -1,0 +1,29 @@
+.footer{
+  height: 332px;
+  &__section{
+    padding-bottom: 25px;
+    @include media-breakpoint-up('m'){
+      padding-bottom: 40px;
+    }
+  }
+  &__txt{
+    font-family: $font-Tahoma-Regular;
+    color: #ffffff;
+    @extend .fz-14;
+    line-height: (22/14);
+  }
+}
+.back-to-top{
+  position: fixed;
+  right: 10px;
+  @include media-breakpoint-up('m'){
+    right: 20px;
+  }
+  transition: all .3s;
+  bottom: -34px;
+  opacity: 0;
+  &.display{
+    bottom: 69px;
+    opacity: 1;
+  }
+}

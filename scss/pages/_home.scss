@@ -1,0 +1,183 @@
+.home{
+  &__alert{
+    position: fixed;
+    top: 7px;
+    left: 18px;
+    width: 150px;
+    margin: 0;
+    background: #000;
+    padding: 0px;
+    .uk-alert-close{
+      top: -4px;
+      right: -20px;
+      //opacity: 1;
+      //color: #ffffff;
+    }
+  }
+  &__content{
+    @include media-breakpoint-up('m'){
+      margin-top: -103px;
+    }
+    &__subnav{
+      margin: 0;
+      >li{
+        padding: 0;
+        >a{
+          //background: url("images/bg_menu_newsz.png");
+          height: 67px;
+        }
+        &:nth-child(1){
+          >a{
+            background: url("images/bg_menu_newsz.png") no-repeat -6px 0px;
+            &:hover{
+              background: url("images/bg_menu_news.png") no-repeat -5.5px 0px;
+            }
+          }
+        }
+        &:nth-child(2){
+          >a{
+            background: url("images/bg_menu_newsz.png") no-repeat -165px 0px;
+            &:hover{
+              background: url("images/bg_menu_news.png") no-repeat -164.5px 0px;
+            }
+          }
+        }
+        &:nth-child(3){
+          >a{
+            background: url("images/bg_menu_newsz.png") no-repeat -313px 0px;
+            &:hover{
+              background: url("images/bg_menu_news.png") no-repeat -312.5px 0px;
+            }
+          }
+        }
+        &:nth-child(4){
+          >a{
+            background: url("images/bg_menu_newsz.png") no-repeat -480px 0px;
+            &:hover{
+              background: url("images/bg_menu_news.png") no-repeat -479.5px 0px;
+            }
+          }
+        }
+        &:nth-child(5){
+          >a{
+            background: url("images/bg_menu_newsz.png") no-repeat -648px 0px;
+            &:hover{
+              background: url("images/bg_menu_news.png") no-repeat -647.5px 0px;
+            }
+          }
+        }
+        &.uk-active{
+          >a{
+            //background: url("images/bg_menu_news.png") no-repeat 0px 0px;
+          }
+          &:nth-child(1){
+            >a{
+              background: url("images/bg_menu_news.png") no-repeat -5.5px 0px;
+            }
+          }
+          &:nth-child(2){
+            >a{
+              background: url("images/bg_menu_news.png") no-repeat -164.5px 0px;
+            }
+          }
+          &:nth-child(3){
+            >a{
+              background: url("images/bg_menu_news.png") no-repeat -312.5px 0px;
+            }
+          }
+          &:nth-child(4){
+            >a{
+              background: url("images/bg_menu_news.png") no-repeat -479.5px 0px;
+            }
+          }
+          &:nth-child(5){
+            >a{
+              background: url("images/bg_menu_news.png") no-repeat -647.5px 0px;
+            }
+          }
+        }
+      }
+    }
+    &__itemLink{
+      filter: grayscale(85%);
+      width: 100%;
+      &:hover{
+        filter: grayscale(0%);
+      }
+    }
+    &__boxNews{
+      padding: 20px;
+      &__date{
+        padding: 6px;
+        border-radius: 4px;
+        background: #f2ebda;
+        color: #625841;
+        @extend .fz-22;
+        font-family: $font-primary;
+        line-height: (22/18);
+        min-width: 40px;
+        box-sizing: border-box;
+        >*{
+          position: relative;
+          &:nth-child(n+2){
+            &:before{
+              content: "";
+              height: 1px;
+              width: 100%;
+              display: inline-block;
+              background: #625841;
+              position: absolute;
+              left: 0;
+              right: 0;
+              top: -2px;
+            }
+          }
+        }
+      }
+      &__title{
+        @extend .fz-27;
+        color: #ffc513;
+        font-family: $font-Tahoma-Regular;
+        a{
+          color: #ffc513;
+        }
+      }
+      &__desc{
+        @extend .fz-15;
+        font-family: $font-Tahoma-Regular;
+        color: #fff2ca;
+        line-height: (22/15);
+        a{
+          color: #ff6a6a;
+          @extend .fz-14;
+        }
+      }
+      &__txt{
+        color: #f2dd9b;
+        line-height: (22/16);
+        @extend .fz-16;
+        font-family: $font-Tahoma-Regular;
+        a{
+          color: #f2dd9b;
+        }
+      }
+    }
+  }
+  &__aside{
+    width: 300px;
+    margin: 0 auto;
+    @include media-breakpoint-up('m'){
+    }
+    &__hoatdong{
+      min-height: 423px;
+      padding-top: 80px;
+
+      line-height: (22/18);
+      @extend .fz-18;
+      color: #f2dd9b;
+      >*{
+
+      }
+    }
+  }
+}

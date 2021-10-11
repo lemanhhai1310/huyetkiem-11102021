@@ -1,0 +1,87 @@
+.header{
+  @include media-breakpoint-up('l'){
+    margin-bottom: 25px;
+  }
+  .uk-logo{
+    img{
+      position: relative;
+      top: 27px;
+    }
+  }
+  .uk-navbar-center-left,
+  .uk-navbar-center-right{
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+  }
+  .uk-navbar-nav{
+    >li{
+      >a{
+        font-family: $font-UVNThanhPho-Bold;
+        @extend .fz-20;
+        color: #ffec81;
+        padding: 0 32px;
+        min-height: 63px;
+        position: relative;
+        top: -6px;
+        &:hover{
+          color: #fdfab5;
+        }
+      }
+    }
+  }
+  .uk-navbar-center-left{
+    .uk-navbar-nav{
+      >li{
+        >a{
+
+        }
+        &:nth-child(1){
+          >a{
+            position: relative;
+            left: 12px;
+          }
+        }
+        &:nth-child(2){
+          >a{
+            position: relative;
+            left: -10px;
+          }
+        }
+        &:nth-child(3){
+          >a{
+            position: relative;
+            left: -24px;
+          }
+        }
+      }
+    }
+  }
+  .uk-navbar-center-right{
+    .uk-navbar-nav{
+      >li{
+        >a{
+          padding: 0 28px;
+        }
+        &:nth-child(1){
+          >a{
+            position: relative;
+            left: 10px;
+          }
+        }
+        &:nth-child(2){
+          >a{
+            position: relative;
+            left: -14px;
+          }
+        }
+        &:nth-child(3){
+          >a{
+            position: relative;
+            left: -39px;
+          }
+        }
+      }
+    }
+  }
+}
